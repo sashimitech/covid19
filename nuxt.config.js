@@ -29,7 +29,7 @@ const config = {
       {
         hid: 'og:url',
         property: 'og:url',
-        content: 'https://stopcovid19.metro.tokyo.lg.jp'
+        content: 'https://relaxed-heyrovsky-1294db.netlify.com'
       },
       {
         hid: 'og:title',
@@ -44,7 +44,7 @@ const config = {
       {
         hid: 'og:image',
         property: 'og:image',
-        content: 'https://stopcovid19.metro.tokyo.lg.jp/ogp.png'
+        content: 'https://relaxed-heyrovsky-1294db.netlify.com/ogp.jpg'
       }
     ],
     link: [

@@ -1,8 +1,8 @@
-# 東京都 新型コロナウイルス感染症対策サイト
+# 岐阜県 新型コロナウイルス感染症対策サイト（非公式）
 
-![](https://github.com/tokyo-metropolitan-gov/covid19/workflows/production%20deploy/badge.svg)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e3aa2c56-419c-413f-9949-ec4c3a6b9690/deploy-status)](https://app.netlify.com/sites/relaxed-heyrovsky-1294db/deploys)
 
-![東京都 新型コロナウイルス感染症対策サイト](https://user-images.githubusercontent.com/1301149/75629392-1d19d900-5c25-11ea-843d-2d4376e3a560.png)
+![岐阜県 新型コロナウイルス感染症対策サイト](https://relaxed-heyrovsky-1294db.netlify.com/ogp.jpg)
 
 
 ## How to Contribute / 貢献の仕方
@@ -32,27 +32,10 @@ $ yarn dev
 
 **Use docker / docker compose を使う場合**
 ```bash
-# Please run after checkout this repository
-$ docker-compose build
-$ docker-compose run --rm app yarn install
 # serve with hot reload at localhost:3000
-$ docker-compose up
+$ docker-compose up --build
 ```
 
-### Deployment to Staging & Production Environments / ステージング・本番環境への反映
+### Deployment to Production Environments / 本番環境への反映
 
-`master` ブランチがアップデートされると、自動的に `production` ブランチにHTML類がbuildされます。そして、本番サイト https://stopcovid19.metro.tokyo.lg.jp/ が更新されます。
-
-`staging` ブランチがアップデートされると、自動的に `gh-pages` ブランチにHTML類がbuildされます。そして、ステージングサイト https://stg-covid19-tokyo.netlify.com/ が更新されます。
-
-`development` ブランチがアップデートされると、自動的に `dev-pages` ブランチにHTML類がbuildされます。そして、開発用サイト https://dev-covid19-tokyo.netlify.com/ が更新されます。
-
-
-When `master` branch is updated, the HTML files will be automatically built onto `production` branch,
-and then the production site (https://stopcovid19.metro.tokyo.lg.jp/) will be also updated.
-
-When `staging` branch is updated, the HTML files will be automatically built onto `gh-pages` branch,
-and then the staging site (https://stg-covid19-tokyo.netlify.com/) will be also updated.
-
-When `development` branch is updated, the HTML files will be automatically built onto `dev-pages` branch,
-and then the development site (https://dev-covid19-tokyo.netlify.com/) will be also updated.
+`master` ブランチがアップデートされると、自動的に本番サイトが更新されます。
