@@ -29,7 +29,7 @@ const config = {
       {
         hid: 'og:url',
         property: 'og:url',
-        content: 'https://relaxed-heyrovsky-1294db.netlify.com'
+        content: 'https://covid19-gifu.netlify.com'
       },
       {
         hid: 'og:title',
@@ -44,7 +44,7 @@ const config = {
       {
         hid: 'og:image',
         property: 'og:image',
-        content: 'https://relaxed-heyrovsky-1294db.netlify.com/ogp.jpg'
+        content: 'https://covid19-gifu.netlify.com/ogp.jpg'
       }
     ],
     link: [

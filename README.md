@@ -2,7 +2,7 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/e3aa2c56-419c-413f-9949-ec4c3a6b9690/deploy-status)](https://app.netlify.com/sites/relaxed-heyrovsky-1294db/deploys)
 
-![岐阜県 新型コロナウイルス感染症対策サイト](https://relaxed-heyrovsky-1294db.netlify.com/ogp.jpg)
+![岐阜県 新型コロナウイルス感染症対策サイト](https://covid19-gifu.netlify.com/ogp.jpg)
 
 
 ## How to Contribute / 貢献の仕方
