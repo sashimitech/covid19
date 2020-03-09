@@ -16,40 +16,38 @@ export default {
   },
   data() {
     return {
-      items: [ 
+      items: [
         {
-          title: '新型コロナウイルス感染症対応緊急融資',
-          body: '<a href="https://www.metro.tokyo.lg.jp/tosei/hodohappyo/press/2020/03/05/26.html" target="_blank" rel="noopener">https://www.metro.tokyo.lg.jp/tosei/hodohappyo/press/2020/03/05/26.html</a><br />新型コロナウイルス感染症により事業活動に影響を受けている中小企業等を対象とした緊急融資制度です。'    
-        },
-        {
-          title: '新型コロナウイルスによる経営課題に関する専門家派遣',
-          body: '<a href="https://www.tokyo-kosha.or.jp/topics/2003/0001.html" target="_blank" rel="noopener">https://www.tokyo-kosha.or.jp/topics/2003/0001.html</a><br />新型コロナウイルス感染症により経営面の影響を受けている中小企業を対象に、中小企業診断士等の専門家を無料で派遣し、経営改善等に向けたアドバイスを実施します。'    
-        },
-        {
-          title: '事業継続緊急対策（テレワーク）助成金',
-          body: '<a href="https://www.shigotozaidan.or.jp/koyo-kankyo/" target="_blank" rel="noopener">https://www.shigotozaidan.or.jp/koyo-kankyo/</a><br />都内中堅・中小企業に対し、テレワークの導入に必要な機器やソフトウェア等の経費を助成します。'    
-        },
-        {
-          title: '中小企業者等特別相談窓口',
+          title: '「新型コロナウイルス関連融資相談窓口」について',
           body:
-            '<a href="https://www.metro.tokyo.lg.jp/tosei/hodohappyo/press/2020/01/30/15.html" target="_blank" rel="noopener">https://www.metro.tokyo.lg.jp/tosei/hodohappyo/press/2020/01/30/15.html</a> <br />資金繰りに関する相談、経営に関する相談（東京都産業労働局　報道発表）'
+            '<a href="https://www.pref.gifu.lg.jp/event-calendar/c11363/yushisoudanmadoguti.html" target="_blank" rel="noopener">https://www.pref.gifu.lg.jp/event-calendar/c11363/yushisoudanmadoguti.html</a><br />新型コロナウイルスの影響を受ける、またはその恐れがある中小企業者・小規模事業者の資金繰りなどの相談窓口を開設しました。'
         },
         {
-          title: '緊急労働相談ダイヤル',
+          title: '「新型コロナウイルスに係る県中小企業資金融資制度の改正」について',
           body:
-            '<a href="https://www.metro.tokyo.lg.jp/tosei/hodohappyo/press/2020/02/26/22.html" target="_blank" rel="noopener">https://www.metro.tokyo.lg.jp/tosei/hodohappyo/press/2020/02/26/22.html</a><br />新型コロナウイルスに関する休暇や休業の取り扱い、職場のハラスメントなどについての相談（東京都産業労働局　報道発表）'
+            '<a href="https://www.pref.gifu.lg.jp/event-calendar/c11363/yushiseidokaisei.html" target="_blank" rel="noopener">https://www.pref.gifu.lg.jp/event-calendar/c11363/yushiseidokaisei.html</a><br />新型コロナウイルスによる影響を受ける県内中小企業・小規模事業者の早期支援に向けて、岐阜県中小企業資金融資制度のうち、経済変動対策資金の要件を改正します。'
         },
         {
-          title: '新しいワークスタイルや企業活動の東京モデル「スムーズビズ」',
+          title: '「新型コロナウイルス感染症に伴うセーフティネット保証４号の実施」について',
           body:
-            '<a href="https://smooth-biz.metro.tokyo.lg.jp/" target="_blank" rel="noopener">https://smooth-biz.metro.tokyo.lg.jp/</a><br />テレワーク・時差出勤などスムーズビズの取組は、新型コロナウイルス感染症の対策としても効果的です。感染症対策として、東京2020大会時の交通混雑緩和に向けた取組の前倒しをお願いします。'
+            '<a href="https://www.pref.gifu.lg.jp/event-calendar/c11363/koronauirusu.html" target="_blank" rel="noopener">https://www.pref.gifu.lg.jp/event-calendar/c11363/koronauirusu.html</a><br />売上高が減少している中小企業・小規模事業者の資金繰り支援措置として、信用保証協会が一般保証と別枠で融資額の１００％を保証する制度が始まりました。'
         },
+        {
+          title: '「新型コロナウイルス感染症関連：経済産業省の支援策」について',
+          body:
+            '<a href="https://www.meti.go.jp/covid-19/" target="_blank" rel="noopener">https://www.meti.go.jp/covid-19/</a> <br />新型コロナウイルスによる企業への影響を緩和し、企業を支援するための施策をご案内します。'
+        },
+        {
+          title: '県制度融資「新型コロナウイルス感染症対策資金」の新設と運用開始',
+          body:
+            '<a href="https://www.pref.gifu.lg.jp/event-calendar/c11363/saigaitaisaku.html" target="_blank" rel="noopener">https://www.pref.gifu.lg.jp/event-calendar/c11363/saigaitaisaku.html</a><br />新型コロナウイルス感染症の影響により売上等が減少している中小企業者の資金繰りを支援するため、新たに「新型コロナウイルス感染症対策資金」を設置し、３月５日から運用を開始します。'
+        }
       ]
     }
   },
   head() {
     return {
-      title: '企業の皆様・はたらく皆様へ'
+      title: '事業者の皆さまへ'
     }
   }
 }

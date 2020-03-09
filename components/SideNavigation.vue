@@ -9,10 +9,11 @@
         mdi-menu
       </v-icon>
       <nuxt-link to="/" class="SideNavigation-HeadingLink">
-        <div class="SideNavigation-Logo">
+        <!-- <div class="SideNavigation-Logo">
           <img src="/logo.svg" :alt="$t('Tokyo')" />
-        </div>
+        </div> -->
         <h1 class="SideNavigation-Heading">
+          {{ $t('Gifu') }}<br />
           {{ $t('COVID-19') }}<br />{{ $t('Measures site') }}
         </h1>
       </nuxt-link>
@@ -40,22 +41,22 @@
       <div class="SideNavigation-Footer">
         <div class="SideNavigation-SocialLinkContainer">
           <a
-            href="https://line.me/R/ti/p/%40822sysfc"
-            target="_blank"
-            rel="noopener"
-          >
-            <img src="/line.png" alt="LINE" />
-          </a>
-          <a
-            href="https://twitter.com/tokyo_bousai"
+            href="https://twitter.com/gifukenkiki"
             target="_blank"
             rel="noopener"
           >
             <img src="/twitter.png" alt="Twitter" />
           </a>
+          <a
+            href="https://www.facebook.com/minamodayori/"
+            target="_blank"
+            rel="noopener"
+          >
+            <img src="/facebook.png" alt="Facebook" />
+          </a>
         </div>
         <small class="SideNavigation-Copyright" lang="en">
-          Copyright &copy; 2020 Tokyo Metropolitan Government. All Rights
+          Copyright &copy; 2020 ICT LABO -GIFU- All Rights
           Reserved.
         </small>
       </div>
@@ -68,20 +69,18 @@
   "ja": {
     "Navi Open": "サイドメニュー項目を開く",
     "Navi Close": "サイドメニュー項目を閉じる",
-    "Tokyo": "東京都",
+    "Gifu": "岐阜県",
     "COVID-19": "新型コロナウイルス感染症",
     "Measures site": "対策サイト",
-    "Tokyo Metropolitan Government": "東京都",
-    "Tokyo COVID-19 Task Force": "新型コロナウイルス感染症対策本部",
-    "The latest updates": "都内の最新感染動向",
+    "Gifu Metropolitan Government": "岐阜県",
+    "Gifu COVID-19 Task Force": "新型コロナウイルス感染症対策本部",
+    "The latest updates": "県内の最新感染動向",
     "If you have any symptoms": "新型コロナウイルス感染症が心配なときに",
     "for Families with children": "お子様をお持ちの皆様へ",
-    "for Citizens": "都民の皆様へ",
-    "for Enterprises and Employees": "企業の皆様・はたらく皆様へ",
-    "Official statements from Task Force": "東京都新型コロナウイルス感染症対策本部報",
-    "Cancelled public events": "東京都主催等 中止又は延期するイベント等",
-    "Government official website": "東京都公式ホームページ",
-    "Message from Governor Koike": "知事からのメッセージ",
+    "for Citizens": "県民の皆様へ",
+    "for Enterprises and Employees": "事業者の皆さまへ",
+    "Cancelled public events": "県主催イベント・県有文化施設等の対応状況",
+    "Government official website": "岐阜県公式ホームページ",
     "About us": "当サイトについて"
   }
 }
@@ -122,7 +121,7 @@ export default {
         {
           icon: 'mdi-account-multiple',
           title: this.$t('for Citizens'),
-          link: 'https://www.metro.tokyo.lg.jp/tosei/tosei/news/2019-ncov.html'
+          link: 'https://www.pref.gifu.lg.jp/kinkyu-juyo-joho/shingata_corona.html'
         },
         {
           icon: 'mdi-domain',
@@ -131,19 +130,9 @@ export default {
           divider: true
         },
         {
-          title: this.$t('Official statements from Task Force'),
-          link:
-            'https://www.bousai.metro.tokyo.lg.jp/taisaku/saigai/1007261/index.html'
-        },
-        {
           title: this.$t('Cancelled public events'),
           link:
-            'https://www.seisakukikaku.metro.tokyo.lg.jp/information/event02.html'
-        },
-        {
-          title: this.$t('Message from Governor Koike'),
-          link:
-            'https://www.metro.tokyo.lg.jp/tosei/governor/governor/katsudo/2020/03/03_00.html'
+            'https://www.pref.gifu.lg.jp/shingata_corona_enki.html'
         },
         {
           title: this.$t('About us'),
@@ -151,7 +140,7 @@ export default {
         },
         {
           title: this.$t('Government official website'),
-          link: 'https://www.metro.tokyo.lg.jp/',
+          link: 'https://www.pref.gifu.lg.jp/',
           divider: true
         }
       ]
