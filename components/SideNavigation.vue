@@ -78,6 +78,7 @@
     "for Families with children": "お子様をお持ちの皆様へ",
     "for Citizens": "県民の皆様へ",
     "for Business person": "事業者の皆さまへ",
+    "for Lodging business": "宿泊事業者の皆さまへ",
     "Cancelled public events": "県主催イベント・県有文化施設等の対応状況",
     "Government official website": "岐阜県公式ホームページ",
     "About us": "当サイトについて"
@@ -126,6 +127,11 @@ export default {
           icon: 'mdi-domain',
           title: this.$t('for Business person'),
           link: '/worker',
+        },
+        {
+          icon: 'mdi-home-city',
+          title: this.$t('for Lodging business'),
+          link: '/lodging',
           divider: true
         },
         {
