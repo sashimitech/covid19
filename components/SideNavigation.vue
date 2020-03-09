@@ -10,10 +10,10 @@
       </v-icon>
       <nuxt-link to="/" class="SideNavigation-HeadingLink">
         <!-- <div class="SideNavigation-Logo">
-          <img src="/logo.svg" :alt="$t('Tokyo')" />
+          <img src="/logo.svg" :alt="$t('Gifu Prefectural Government')" />
         </div> -->
         <h1 class="SideNavigation-Heading">
-          {{ $t('Gifu') }}<br />
+          {{ $t('Gifu Prefectural Government') }}<br />
           {{ $t('COVID-19') }}<br />{{ $t('Measures site') }}
         </h1>
       </nuxt-link>
@@ -69,16 +69,15 @@
   "ja": {
     "Navi Open": "サイドメニュー項目を開く",
     "Navi Close": "サイドメニュー項目を閉じる",
-    "Gifu": "岐阜県",
     "COVID-19": "新型コロナウイルス感染症",
     "Measures site": "対策サイト",
-    "Gifu Metropolitan Government": "岐阜県",
-    "Gifu COVID-19 Task Force": "新型コロナウイルス感染症対策本部",
+    "Gifu Prefectural Government": "岐阜県",
+    "COVID-19 Task Force": "新型コロナウイルス感染症対策本部",
     "The latest updates": "県内の最新感染動向",
     "If you have any symptoms": "新型コロナウイルス感染症が心配なときに",
     "for Families with children": "お子様をお持ちの皆様へ",
     "for Citizens": "県民の皆様へ",
-    "for Enterprises and Employees": "事業者の皆さまへ",
+    "for Business person": "事業者の皆さまへ",
     "Cancelled public events": "県主催イベント・県有文化施設等の対応状況",
     "Government official website": "岐阜県公式ホームページ",
     "About us": "当サイトについて"
@@ -125,7 +124,7 @@ export default {
         },
         {
           icon: 'mdi-domain',
-          title: this.$t('for Enterprises and Employees'),
+          title: this.$t('for Business person'),
           link: '/worker',
           divider: true
         },
