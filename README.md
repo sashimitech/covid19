@@ -8,10 +8,10 @@
 ## How to Contribute / 貢献の仕方
 Issues にあるいろいろな修正にご協力いただけると嬉しいです。
 
-詳しくは[How to contribute](https://github.com/tokyo-metropolitan-gov/covid19/wiki/How-to-contribute)を御覧ください。
+詳しくは[How to contribute](https://github.com/ICT-LABO/covid19/blob/development/.github/CONTRIBUTING.md)を御覧ください。
 
 All contributions are welcome!
-Please check [How to contribute](https://github.com/tokyo-metropolitan-gov/covid19/wiki/How-to-contribute%5BEnglish%5D) for details.
+Please check [How to contribute](https://github.com/ICT-LABO/covid19/blob/development/.github/CONTRIBUTING.md) for details.
 
 ## License / ライセンス
 本ソフトウェアは、MITライセンスの元提供されています。 
@@ -36,6 +36,8 @@ $ yarn dev
 $ docker-compose up --build
 ```
 
-### Deployment to Production Environments / 本番環境への反映
+### Deployment to Development & Production Environments / 開発・本番環境への反映
 
-`master` ブランチがアップデートされると、自動的に本番サイトが更新されます。
+`master` ブランチがアップデートされると、自動的に本番サイトが `https://covid19-gifu.netlify.com` 更新されます。
+
+`develop` ブランチがアップデートされると、自動的に開発用サイト `https://dev-covid19-gifu.netlify.com` が更新されます。
