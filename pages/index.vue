@@ -1,10 +1,6 @@
 <template>
   <div class="MainPage">
-    <page-header
-      :icon="headerItem.icon"
-      :title="headerItem.title"
-      :date="headerItem.date"
-    />
+    <page-header :icon="headerItem.icon" :title="headerItem.title" :date="headerItem.date" />
     <whats-new class="mb-4" :items="newsItems" />
     <static-info
       class="mb-4"
@@ -12,13 +8,9 @@
       :text="'自分や家族の症状に不安や心配があればまずは電話相談をどうぞ'"
       :btn-text="'相談の手順を見る'"
     />
-    <!-- <v-row class="DataBlock">
+    <v-row class="DataBlock">
       <v-col cols="12" md="6" class="DataCard">
-        <svg-card
-          title="検査陽性者の状況"
-          :title-id="'details-of-confirmed-cases'"
-          :date="headerItem.date"
-        >
+        <svg-card title="検査陽性者の状況" :title-id="'details-of-confirmed-cases'" :date="headerItem.date">
           <confirmed-cases-table v-bind="confirmedCases" />
         </svg-card>
       </v-col>
@@ -31,7 +23,7 @@
           :date="Data.patients.date"
           :unit="'人'"
           :url="
-            'https://catalog.data.metro.tokyo.lg.jp/dataset/t000010d0000000068'
+            'https://www.pref.gifu.lg.jp/kinkyu-juyo-joho/shingata_corona.data/200312-1f.pdf'
           "
         />
       </v-col>
@@ -44,23 +36,24 @@
           :date="Data.patients.date"
           :info="sumInfoOfPatients"
           :url="
-            'https://catalog.data.metro.tokyo.lg.jp/dataset/t000010d0000000068'
+            'https://www.pref.gifu.lg.jp/kinkyu-juyo-joho/shingata_corona.data/200312-2.pdf'
           "
         />
       </v-col>
       <v-col cols="12" md="6" class="DataCard">
-        <time-stacked-bar-chart
+        <time-bar-chart
           title="検査実施数"
           :title-id="'number-of-tested'"
-          :chart-id="'time-stacked-bar-chart-inspections'"
+          :chart-id="'time-bar-chart-inspections'"
           :chart-data="inspectionsGraph"
           :date="Data.inspections_summary.date"
-          :items="inspectionsItems"
-          :labels="inspectionsLabels"
           :unit="'件'"
+          :url="
+            'https://www.pref.gifu.lg.jp/kinkyu-juyo-joho/shingata_corona.data/200312-2.pdf'
+          "
         />
       </v-col>
-      <v-col cols="12" md="6" class="DataCard">
+      <!--v-col cols="12" md="6" class="DataCard">
         <time-bar-chart
           title="新型コロナコールセンター相談件数"
           :title-id="'number-of-reports-to-covid19-telephone-advisory-center'"
@@ -70,7 +63,7 @@
           :unit="'件'"
           :url="''"
         />
-      </v-col>
+      </!--v-col>
       <v-col cols="12" md="6" class="DataCard">
         <time-bar-chart
           title="新型コロナ受診相談窓口相談件数"
@@ -82,7 +75,7 @@
           :url="''"
         />
       </v-col>
-      <v-col cols="12" md="6" class="DataCard">
+      <v-col-- cols="12" md="6" class="DataCard">
         <metro-bar-chart
           title="都営地下鉄の利用者数の推移"
           :title-id="'predicted-number-of-toei-subway-passengers'"
@@ -91,8 +84,8 @@
           :chart-option="metroGraphOption"
           :date="metroGraph.date"
         />
-      </v-col>
-    </v-row> -->
+      </v-col-->
+    </v-row>
   </div>
 </template>
 
@@ -141,14 +134,13 @@ export default {
     // 都営地下鉄の利用者数の推移
     const metroGraph = MetroData
     // 検査実施日別状況
-    const inspectionsGraph = [
-      Data.inspections_summary.data['都内'],
-      Data.inspections_summary.data['その他']
-    ]
+    const inspectionsGraph = formatGraph(Data.inspections_summary.data)
+    /*
     const inspectionsItems = [
       '県内発生（疑い例・接触者調査）',
       'その他（チャーター便・クルーズ便）'
     ]
+    */
     const inspectionsLabels = Data.inspections_summary.labels
     // 死亡者数
     // #MEMO: 今後使う可能性あるので一時コメントアウト
@@ -176,7 +168,6 @@ export default {
       querentsGraph,
       metroGraph,
       inspectionsGraph,
-      inspectionsItems,
       inspectionsLabels,
       confirmedCases,
       sumInfoOfPatients,
