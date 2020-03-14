@@ -54,11 +54,18 @@
           >
             <img src="/facebook.png" alt="Facebook" />
           </a>
+          <a
+            href="https://github.com/CODE-for-GIFU/covid19"
+            target="_blank"
+            rel="noopener"
+          >
+            <img src="/github.png" alt="GitHub" />
+          </a>
         </div>
-        <small class="SideNavigation-Copyright" lang="en">
+        <!-- <small class="SideNavigation-Copyright" lang="en">
           Copyright &copy; 2020 ICT LABO -GIFU- All Rights
           Reserved.
-        </small>
+        </small> -->
       </div>
     </div>
   </div>
