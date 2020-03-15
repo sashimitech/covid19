@@ -9,9 +9,9 @@
         mdi-menu
       </v-icon>
       <nuxt-link to="/" class="SideNavigation-HeadingLink">
-        <!-- <div class="SideNavigation-Logo">
+        <div class="SideNavigation-Logo">
           <img src="/logo.svg" :alt="$t('Gifu Prefectural Government')" />
-        </div> -->
+        </div>
         <h1 class="SideNavigation-Heading">
           {{ $t('Gifu Prefectural Government') }}<br />
           {{ $t('COVID-19') }}<br />{{ $t('Measures site') }}
@@ -128,12 +128,13 @@ export default {
         {
           icon: 'mdi-account-multiple',
           title: this.$t('for Citizens'),
-          link: 'https://www.pref.gifu.lg.jp/kinkyu-juyo-joho/shingata_corona.html'
+          link:
+            'https://www.pref.gifu.lg.jp/kinkyu-juyo-joho/shingata_corona.html'
         },
         {
           icon: 'mdi-domain',
           title: this.$t('for Business person'),
-          link: '/worker',
+          link: '/worker'
         },
         {
           icon: 'mdi-home-city',
@@ -143,8 +144,7 @@ export default {
         },
         {
           title: this.$t('Cancelled public events'),
-          link:
-            'https://www.pref.gifu.lg.jp/shingata_corona_enki.html'
+          link: 'https://www.pref.gifu.lg.jp/shingata_corona_enki.html'
         },
         {
           title: this.$t('About us'),
