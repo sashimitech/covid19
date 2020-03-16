@@ -44,7 +44,7 @@ const config = {
             {
                 hid: 'og:image',
                 property: 'og:image',
-                content: 'https://covid19-gifu.netlify.com/ogp.png'
+                content: 'static/ogp.png'
             }
         ],
         link: [
