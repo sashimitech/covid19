@@ -8,10 +8,10 @@
 
 Issues にあるいろいろな修正にご協力いただけると嬉しいです。
 
-詳しくは[How to contribute](https://github.com/ICT-LABO/covid19/blob/development/.github/CONTRIBUTING.md)を御覧ください。
+詳しくは[How to contribute](https://github.com/CODE-for-GIFU/covid19/blob/development/.github/CONTRIBUTING.md)を御覧ください。
 
 All contributions are welcome!
-Please check [How to contribute](https://github.com/ICT-LABO/covid19/blob/development/.github/CONTRIBUTING.md) for details.
+Please check [How to contribute](https://github.com/CODE-for-GIFU/covid19/blob/development/.github/CONTRIBUTING.md) for details.
 
 ## License / ライセンス
 
