@@ -22,7 +22,7 @@
       <div :class="$style.AdvisoryContents">
         <div class="py-8">
           <div :class="$style.AdvisoryContentsTitle2">
-            {{ $t('平日（24時間）') }}
+            {{ $t('毎日（24時間）') }}
           </div>
           <div
             :class="[
@@ -54,36 +54,6 @@
           </div>
         </div>
       </div>
-
-      <!--<div :class="$style.AdvisoryContents">
-        <div class="pt-8">
-          <div :class="$style.AdvisoryContentsTitle2">
-            {{ $t('平日（夜間）') }}
-          </div>
-          <span>{{ $t('午後5時から翌朝午前9時') }}</span>
-        </div>
-        <div class="mt-1">
-          <span :class="$style.AdvisoryContentsSubTitle">
-            {{ $t('土日祝 終日') }}
-          </span>
-        </div>
-        <div
-          :class="[
-            $style.AdvisoryTelephoneArea,
-            $style.AdvisoryBlockCentering,
-            'mt-1'
-          ]"
-        >
-          <a :class="$style.AdvisoryTelephone" href="tel:0353204592">
-            <img
-              :class="$style.AdvisoryTelephoneIcon"
-              src="/flow/phone-24px.svg"
-              aria-hidden="true"
-            />
-            03-5320-4592
-          </a>
-        </div>
-      </div>-->
 
       <div :class="$style.AdvisoryContents">
         <div class="pt-8">
@@ -126,7 +96,7 @@
     </div>
   </div>
 </template>
-<script>
+<!--<script>
 import Data from '@/data/data.json'
 import DataTable from '@/components/DataTable.vue'
 import formatTable from '@/utils/formatTable'
@@ -143,7 +113,7 @@ export default {
     return data
   }
 }
-</script>
+</script>-->
 <style module lang="scss">
 .Advisory {
   display: flex;
