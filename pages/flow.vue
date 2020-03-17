@@ -6,14 +6,17 @@
         新型コロナウイルス感染症が心配なときに
       </h2>
     </div>
-    <div class="Flow-Card">
-      <h2>
+    <div class="only-pc">
+      <flow-pc />
+    </div>
+    <div class="only-sp">
+      <flow-sp />
+    </div>
+    <div class="Flow-Card-Button-Wrapper mt-6">
+      <!--<h2>
         新型コロナウイルス感染症にかかる相談窓口について
       </h2>
-      <!-- <div class="Flow-Card-Images only-pc">
-        <DesktopFlowSvg />
-      </div>
-      <div class="only-sp">
+       <div class="only-sp">
         <div class="Flow-Card-Parts">
           <div class="mb-5">
             <img
@@ -197,7 +200,7 @@
             />
           </div>
         </div>
-      </div> -->
+      </div>-->
       <a
         href="https://www.pref.gifu.lg.jp/kinkyu-juyo-joho/shingata_corona.html"
         target="_blank"
@@ -214,16 +217,32 @@
 </template>
 
 <script>
+import Vue from 'vue'
 import CovidIcon from '@/static/covid.svg'
-import DesktopFlowSvg from '@/components/DesktopFlowSvg.vue'
-export default {
+//  import DesktopFlowSvg from '@/components/DesktopFlowSvg.vue'
+import FlowPc from '@/components/flow/FlowPc.vue'
+import FlowSp from '@/components/flow/FlowSp.vue'
+/* export default {
   components: { CovidIcon, DesktopFlowSvg },
   head() {
     return {
       title: '新型コロナウイルス感染症が心配なときに'
     }
   }
-}
+} */
+export default Vue.extend({
+  components: {
+    CovidIcon,
+    FlowPc,
+    FlowSp
+    // FlowSp
+  },
+  head() {
+    return {
+      title: '新型コロナウイルス感染症が心配なときに'
+    }
+  }
+})
 </script>
 
 <style lang="scss">
@@ -334,6 +353,9 @@ export default {
       &-ExternalLinkIcon {
         margin-left: 2px;
         color: $blue-1 !important;
+      }
+      &-Wrapper {
+        text-align: center;
       }
     }
   }
