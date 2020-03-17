@@ -83,7 +83,7 @@
             'mt-1'
           ]"
         >
-          <a :class="$style.AdvisoryTelephone" href="tel:058-263-8066">
+          <a :class="$style.AdvisoryTelephone" href="tel:0582638066">
             <img
               :class="$style.AdvisoryTelephoneIcon"
               src="/flow/phone-24px.svg"
