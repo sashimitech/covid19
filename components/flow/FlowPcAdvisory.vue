@@ -4,7 +4,7 @@
       <div :class="$style.AdvisoryContents">
         <div>
           <span :class="$style.AdvisoryContentsTitle">{{
-            $t('新型コロナ受診相談窓口（日本語のみ）')
+            $t('新型コロナ受診相談窓口')
           }}</span>
         </div>
         <div :class="[$style.AdvisoryContentsColsSentense, 'mt-4']">
@@ -22,7 +22,7 @@
       <div :class="$style.AdvisoryContents">
         <div class="py-8">
           <div :class="$style.AdvisoryContentsTitle2">
-            {{ $t('平日（日中）') }}
+            {{ $t('平日（24時間）') }}
           </div>
           <div
             :class="[
@@ -55,7 +55,7 @@
         </div>
       </div>
 
-      <div :class="$style.AdvisoryContents">
+      <!--<div :class="$style.AdvisoryContents">
         <div class="pt-8">
           <div :class="$style.AdvisoryContentsTitle2">
             {{ $t('平日（夜間）') }}
@@ -81,6 +81,45 @@
               aria-hidden="true"
             />
             03-5320-4592
+          </a>
+        </div>
+      </div>-->
+
+      <div :class="$style.AdvisoryContents">
+        <div class="pt-8">
+          <div :class="$style.AdvisoryContentsTitle2">
+            {{ $t('在住外国人') }}
+          </div>
+          <span>
+            {{
+              $t('Gifu Prefectural Consultation Center for Foreign Residents')
+            }}
+          </span>
+        </div>
+        <div class="mt-1">
+          <span :class="$style.AdvisoryContentsSubTitle">
+            {{ $t('9 AM - 6 PM') }}
+          </span>
+        </div>
+        <div class="mt-1">
+          <span :class="$style.AdvisoryContentsSubTitle">
+            {{ $t('Weekdays sunday') }}
+          </span>
+        </div>
+        <div
+          :class="[
+            $style.AdvisoryTelephoneArea,
+            $style.AdvisoryBlockCentering,
+            'mt-1'
+          ]"
+        >
+          <a :class="$style.AdvisoryTelephone" href="tel:058-263-8066">
+            <img
+              :class="$style.AdvisoryTelephoneIcon"
+              src="/flow/phone-24px.svg"
+              aria-hidden="true"
+            />
+            058-263-8066
           </a>
         </div>
       </div>

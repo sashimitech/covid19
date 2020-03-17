@@ -46,20 +46,20 @@
 
     <div :class="[$style.SubtleBox, $style.Box2, $style.Center]">
       <div :class="$style.LargerText">
-        {{ $t('新型コロナコールセンター') }}
+        {{ $t('県健康福祉政策課') }}
       </div>
       <div :class="$style.SmallerText">
-        {{ $t('午前9時から午後9時（土日祝含む）') }}
+        {{ $t('8:30〜17:15（平日のみ）') }}
       </div>
 
       <div :class="$style.Tel">
-        <a :class="$style.TelLink" href="tel:0570550571">
+        <a :class="$style.TelLink" href="tel:0582721111">
           <img
             :class="$style.TelLinkIcon"
             src="/flow/phone-24px.svg"
             aria-hidden="true"
           />
-          0570-550571
+          058-272-1111<br />(内線2515、2516)
         </a>
       </div>
     </div>
