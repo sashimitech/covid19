@@ -23,7 +23,7 @@
           :date="Data.patients.date"
           :unit="'人'"
           :url="
-            'https://www.pref.gifu.lg.jp/kinkyu-juyo-joho/shingata_corona.data/200312-1f.pdf'
+            'https://www.pref.gifu.lg.jp/kinkyu-juyo-joho/shingata_corona.html'
           "
         />
       </v-col>
@@ -36,7 +36,7 @@
           :date="Data.patients.date"
           :info="sumInfoOfPatients"
           :url="
-            'https://www.pref.gifu.lg.jp/kinkyu-juyo-joho/shingata_corona.data/200312-2.pdf'
+            'https://www.pref.gifu.lg.jp/kinkyu-juyo-joho/shingata_corona.html'
           "
         />
       </v-col>
