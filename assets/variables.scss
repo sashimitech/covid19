@@ -96,9 +96,26 @@ $small: 450;
 
 // ===================
 // card
-@mixin card-container {
+/*@mixin card-container {
     background-color: $white;
     box-shadow: $shadow;
     border: 0.5px solid $gray-4 !important;
     border-radius: 4px;
-}
+}*/
+@mixin card-container($withDivider: false) {
+    background-color: $white;
+    box-shadow: $shadow;
+    border: 0.5px solid $gray-4 !important;
+    border-radius: 4px;
+    @if ($withDivider) {
+      &::before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: 0;
+        width: 1px;
+        height: 100%;
+        background-color: $gray-4;
+      }
+    }
+  }
