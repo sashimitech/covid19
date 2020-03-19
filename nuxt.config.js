@@ -1,5 +1,7 @@
 import purgecss from '@fullhuman/postcss-purgecss'
 // import { Configuration } from '@nuxt/types'
+import i18n from './nuxt-i18n.config'
+const environment = process.env.NODE_ENV || 'development'
 
 /* eslint-disable */
 const config = {
@@ -87,62 +89,8 @@ const config = {
         '@nuxtjs/axios',
         '@nuxtjs/pwa',
         // Doc: https://github.com/nuxt-community/dotenv-module
-        '@nuxtjs/dotenv', [
-            'nuxt-i18n',
-            {
-                strategy: 'prefix_except_default',
-                detectBrowserLanguage: {
-                    useCookie: true,
-                    cookieKey: 'i18n_redirected'
-                },
-                locales: [{
-                        code: 'ja',
-                        name: '日本語',
-                        iso: 'ja-JP'
-                    },
-                    {
-                        code: 'en',
-                        name: 'English',
-                        iso: 'en-US'
-                    },
-                    {
-                        code: 'zh-cn',
-                        name: '簡体字',
-                        iso: 'zh-CN'
-                    },
-                    {
-                        code: 'zh-tw',
-                        name: '繁體字',
-                        iso: 'zh-TW'
-                    },
-                    {
-                        code: 'ko',
-                        name: '한국어',
-                        iso: 'ko-KR'
-                    }
-                    // ,
-                    // #1126, #872 (comment)
-                    // ポルトガル語は訳が揃っていないため非表示
-                    // 「やさしい日本語」はコンポーネントが崩れるため非表示
-                    // {
-                    //   code: 'pt-BR',
-                    //   name: 'Portuguese',
-                    //   iso: 'pt-BR'
-                    // },
-                    // {
-                    //   code: 'ja-basic',
-                    //   name: 'やさしい にほんご',
-                    //   iso: 'ja-JP'
-                    // }
-                ],
-                defaultLocale: 'ja',
-                vueI18n: {
-                    fallbackLocale: 'ja',
-                    formatFallbackMessages: true
-                },
-                vueI18nLoader: true
-            }
-        ],
+        // ['@nuxtjs/dotenv', { filename: `.env.${environment}` }],
+        ['nuxt-i18n', i18n],
         'nuxt-svg-loader',
         'nuxt-purgecss'
     ],
