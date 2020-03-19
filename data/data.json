@@ -1798,7 +1798,7 @@
     },
     "lastUpdate": "2020/03/18 12:00",
     "main_summary": {
-        "attr": "検査実施人数",
+        "attr": "検査実施件数",
         "value": 265,
         "children": [{
             "attr": "陽性患者数",
