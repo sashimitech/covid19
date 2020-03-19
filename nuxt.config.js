@@ -147,7 +147,23 @@ const config = {
         splash_pages: null
     },
     generate: {
-        fallback: true
+        fallback: true,
+        routes() {
+          const locales = ['ja', 'en', 'zh-cn', 'zh-tw', 'ko', 'ja-basic']
+
+          const routes = []
+          locales.forEach(locale => {
+            pages.forEach(page => {
+              if (locale === 'ja') {
+                routes.push(page)
+                return
+              }
+              const route = `/${locale}${page}`
+              routes.push(route)
+            })
+          })
+          return routes
+        }
     },
     // /*
     // ** hot read configuration for docker
