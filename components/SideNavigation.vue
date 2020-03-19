@@ -86,20 +86,13 @@
   </div>
 </template>
 
-<script lang="ts">
+<script>
 import Vue from 'vue'
 import { TranslateResult } from 'vue-i18n'
 import LanguageSelector from '@/components/LanguageSelector.vue'
 import MenuList from '@/components/MenuList.vue'
 
-type Item = {
-  icon?: string
-  title: TranslateResult
-  link: string
-  divider?: boolean
-}
-
-export default Vue.extend({
+export default {
   components: {
     LanguageSelector,
     MenuList
@@ -111,7 +104,7 @@ export default Vue.extend({
     }
   },
   computed: {
-    items(): Item[] {
+    items() {
       return [
         {
           icon: 'mdi-chart-timeline-variant',
@@ -168,14 +161,14 @@ export default Vue.extend({
     handleChageRoute() {
       // nuxt-link で遷移するとフォーカスが残り続けるので $route を監視して SideNavigation にフォーカスする
       return this.$nextTick().then(() => {
-        const $Side = this.$refs.Side as HTMLEmbedElement | undefined
+        const $Side = this.$refs.Side
         if ($Side) {
           $Side.focus()
         }
       })
     }
   }
-})
+}
 </script>
 
 <style lang="scss" scoped>
