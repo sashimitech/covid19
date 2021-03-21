@@ -1,4 +1,4 @@
-# 岐阜県 新型コロナウイルス感染症対策サイト（非公式）
+# 岐阜県 新型コロナウイルス感染症対策サイト（岐阜県公認）
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/e3aa2c56-419c-413f-9949-ec4c3a6b9690/deploy-status)](https://app.netlify.com/sites/relaxed-heyrovsky-1294db/deploys)
 
